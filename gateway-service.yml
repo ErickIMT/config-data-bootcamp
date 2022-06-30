@@ -9,6 +9,14 @@ spring:
         uri: https://localhost:8091
         predicates:
         - Path=/customers/**
+      - id: product-service
+        uri: https://localhost:8092
+        predicates:
+        - Path=/customers/**
+      - id: transaction-service
+        uri: https://localhost:8093
+        predicates:
+        - Path=/customers/**
   application:
     name: apigateway-server
 
