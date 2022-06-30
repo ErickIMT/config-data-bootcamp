@@ -12,11 +12,15 @@ spring:
       - id: product-service
         uri: https://localhost:8092
         predicates:
-        - Path=/customers/**
+        - Path=/products/bankAccounts/**
+      - id: product-service
+        uri: https://localhost:8092
+        predicates:
+        - Path=/products/credits/**
       - id: transaction-service
         uri: https://localhost:8093
         predicates:
-        - Path=/customers/**
+        - Path=/transactions/**
   application:
     name: apigateway-server
 
