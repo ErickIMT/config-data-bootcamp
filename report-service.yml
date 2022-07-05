@@ -1,0 +1,12 @@
+server:
+  port: 8096
+  
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/bank
+      
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8094/eureka
