@@ -1,11 +1,14 @@
 server:
   port: 8095
 
+feign:
+  httpclient:
+    disableSslValidation: true
+    enabled: false
+  okhttp:
+    enabled: true
+
 spring:
-  cloud:
-    httpclient:
-      ssl:
-        useInsecureTrustManager: true
     gateway:
       routes:
       - id: customer-service
