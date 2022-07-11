@@ -10,12 +10,12 @@ spring:
         predicates:
         - Path=/customers/**
       - id: product-service
-        uri: http://localhost:8092
+        uri: http://localhost:8092/
         predicates:
-        - Path=/products/bankAccounts/**
-        - Path=/products/credits/**
+        - Path=/bankAccounts/**
+        - Path=/credits/**
       - id: transaction-service
-        uri: http://localhost:8093
+        uri: http://localhost:8093/
         predicates:
         - Path=/transactions/**
 
