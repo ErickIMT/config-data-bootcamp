@@ -12,10 +12,6 @@ eureka:
       defaultZone: http://localhost:8094/eureka
       
 management:
-  endpoints:
-    web:
-      exposure:
-        include: *
   health:
     circuitbreakers:
       enabled: true
