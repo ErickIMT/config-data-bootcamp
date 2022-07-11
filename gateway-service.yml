@@ -21,7 +21,7 @@ spring:
         predicates:
         - Path=/transactions/**
   application:
-    name: gateway-server
+    name: gateway-service
 
 eureka:
   client:
