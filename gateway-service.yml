@@ -20,8 +20,6 @@ spring:
         uri: http://localhost:8093
         predicates:
         - Path=/transactions/**
-  application:
-    name: gateway-service
 
 eureka:
   client:
