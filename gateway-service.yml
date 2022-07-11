@@ -3,6 +3,9 @@ server:
 
 spring:
   cloud:
+    httpclient:
+      ssl:
+        useInsecureTrustManager: true
     gateway:
       routes:
       - id: customer-service
