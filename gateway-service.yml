@@ -13,9 +13,6 @@ spring:
         uri: http://localhost:8092
         predicates:
         - Path=/products/bankAccounts/**
-      - id: product-service
-        uri: http://localhost:8092
-        predicates:
         - Path=/products/credits/**
       - id: transaction-service
         uri: http://localhost:8093
