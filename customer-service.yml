@@ -20,10 +20,6 @@ management:
 
 resilience4j:
   circuitbreaker:
-    
-
-resilience4j:
-  circuitbreaker:
       instances:
           customerCB:
               registerHealthIndicator: true
