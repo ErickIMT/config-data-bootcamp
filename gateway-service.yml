@@ -2,9 +2,10 @@ server:
   port: 8095
 
 spring:
+  cloud:
     gateway:
       routes:
-      - id: customer-service
+      - id: CUSTOMER-SERVICE
         uri: localhost:8091/
         predicates:
         - Path=/customers/**
