@@ -6,7 +6,7 @@ spring:
     gateway:
       routes:
       - id: customer-service
-        uri: localhost:8091/
+        uri: http://localhost:8091/
         predicates:
         - Path=/customers/**
       - id: product-service
