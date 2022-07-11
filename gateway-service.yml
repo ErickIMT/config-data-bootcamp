@@ -17,6 +17,10 @@ spring:
         uri: http://localhost:8093/
         predicates:
         - Path=/transactions/**
+      - id: report-service
+        uri: http://localhost:8096/
+        predicates:
+        - Path=/reports/**
 
 eureka:
   client:
